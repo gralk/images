@@ -4,9 +4,21 @@ A collection of OpenEXR Scene-Referred images, encoded as max 2048px width, DWAA
 All exrs are encoded Filmlight E-Gamut linear. To convert from E-Gamut to XYZ you can use this 3x3 matrix.
 
 ```
-0.70539683 0.16404134 0.08101775
-0.28013071 0.82020670 -0.10033738
--0.10378151 -0.07290726 1.26574659
+0.7053968501 0.1640413283 0.08101774865
+0.2801307241 0.8202066415 -0.1003373656
+-0.1037815116 -0.07290725703 1.265746519
+```
+
+or, as a Nuke ColorMatrix node:
+```
+ColorMatrix {
+ matrix {
+     {0.7053968501 0.1640413283 0.08101774865}
+     {0.2801307241 0.8202066415 -0.1003373656}
+     {-0.1037815116 -0.07290725703 1.265746519}
+   }
+ label "Filmlight E-Gamut to XYZ D65"
+}
 ```
 
 ## Sources
@@ -21,7 +33,7 @@ These images were acquired from the following open sources:
 - [Blackmagic Raw Test Footage](https://www.blackmagicdesign.com/ca/products/blackmagicpocketcinemacamera/gallery)  
 
 
-## File List
+## File List in **exr** folder
 
 ```
 SRIC_arri.01001.exr
@@ -43,6 +55,48 @@ SRIC_arri.01016.exr
 SRIC_arri.01017.exr
 SRIC_arri.01018.exr
 SRIC_arri.01019.exr
+SRIC_arri_alexa35.01001.exr
+SRIC_arri_alexa35.01002.exr
+SRIC_arri_alexa35.01003.exr
+SRIC_arri_alexa35.01004.exr
+SRIC_arri_alexa35.01005.exr
+SRIC_arri_alexa35.01006.exr
+SRIC_arri_alexa35.01007.exr
+SRIC_arri_alexa35.01008.exr
+SRIC_arri_alexa35.01009.exr
+SRIC_arri_alexa35.01010.exr
+SRIC_arri_alexa35.01011.exr
+SRIC_arri_alexa35.01012.exr
+SRIC_arri_alexa35.01013.exr
+SRIC_arri_alexa35.01014.exr
+SRIC_arri_alexa35.01015.exr
+SRIC_arri_alexa35.01016.exr
+SRIC_arri_alexa35.01017.exr
+SRIC_arri_alexa35.01018.exr
+SRIC_arri_alexa35.01019.exr
+SRIC_arri_alexa35.01020.exr
+SRIC_arri_alexa35.01021.exr
+SRIC_arri_alexa35.01022.exr
+SRIC_arri_alexa35.01023.exr
+SRIC_arri_alexa35.01024.exr
+SRIC_arri_alexa35.01025.exr
+SRIC_arri_alexa35.01026.exr
+SRIC_arri_alexa35.01027.exr
+SRIC_arri_alexa35.01028.exr
+SRIC_arri_alexa35.01029.exr
+SRIC_arri_alexa35.01030.exr
+SRIC_arri_alexa35.01031.exr
+SRIC_arri_alexa35.01032.exr
+SRIC_arri_alexa35.01033.exr
+SRIC_arri_alexa35.01034.exr
+SRIC_arri_alexa35.01035.exr
+SRIC_arri_alexa35.01036.exr
+SRIC_arri_alexa35.01037.exr
+SRIC_arri_alexa35.01038.exr
+SRIC_arri_alexa35.01039.exr
+SRIC_arri_alexa35.01040.exr
+SRIC_arri_alexa35.01041.exr
+SRIC_arri_alexa35.01042.exr
 SRIC_cinematography-mailing-list.01001.exr
 SRIC_cinematography-mailing-list.01002.exr
 SRIC_cinematography-mailing-list.01003.exr
@@ -144,4 +198,7 @@ SRIC_vwg_output-transforms.01010.exr
 SRIC_vwg_output-transforms.01011.exr
 SRIC_vwg_output-transforms.01012.exr
 SRIC_vwg_output-transforms.01013.exr
+SRIC_vwg_output-transforms.01014.exr
+SRIC_vwg_output-transforms.01015.exr
+
 ```
